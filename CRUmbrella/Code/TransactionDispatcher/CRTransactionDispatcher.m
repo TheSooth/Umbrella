@@ -29,6 +29,16 @@ static CRTransactionDispatcher *sharedDispatcher = nil;
     sharedDispatcher = aDispatcher;
 }
 
+- (id)init
+{
+    self = [super init];
+    
+    if (self) {
+        self.transactionHandlers = [NSMutableArray new];
+    }
+    return self;
+}
+
 - (id)initWithTransactionHandlers:(NSArray *)aTransactionHandlers
 {
     NSParameterAssert(aTransactionHandlers);

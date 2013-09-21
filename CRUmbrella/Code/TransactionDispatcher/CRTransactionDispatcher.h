@@ -19,6 +19,8 @@
 + (CRTransactionDispatcher *)sharedDispatcher;
 + (void)setSharedDispatcher:(CRTransactionDispatcher *)aDispatcher;
 
+- (id)initWithTransactionHandlers:(NSArray *)aTransactionHandlers;
+
 - (void)dispatchTransaction:(CRBaseTransaction *)aTransaction;
 - (void)dispatchTransaction:(CRBaseTransaction *)aTransaction withObject:(id)aObject;
 
