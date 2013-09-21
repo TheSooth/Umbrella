@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/TheSooth/Umbrella.git", :tag => "#{s.version}" }
 
-  s.source_files  = 'CRUmbrella/Code', 'Core/Code/**/*.{h,m}'
+  s.source_files  = 'CRUmbrella/Code', 'CRUmbrella/Code/**/*.{h,m}'
 
   s.frameworks = 'Foundation'
 
